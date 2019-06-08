@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ziare VR</title>
+   
+
+
+
+     
+    <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+  <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
+  <script src="https://rawgit.com/Ctrl-Alt-Zen/aframe-mobile-controls/master/components/tilt-turn/tilt-turn.js"></script>
+  <script src="https://res.cloudinary.com/dybluctxg/raw/upload/v1495309810/index_bp9czc.js"></script>
+
+  </head>
+<body>
+    <a-scene oading-screen="dotsColor: red; backgroundColor: black">
+      <style></style>
+    <a-assets>
+        <img id="masa" src="lemn4k.png">
+      </a-assets>
+      <a-assets>
+        
+          <img id="ziar" src="download.jpg">
+          <img id="adevaru" src="adevar.png" >
+          <img id="gspu" src="gsp.jpg">
+          <a-mixin geometry="primitive: circle; radius: 1" id="buton" material="color: #fff; transparent: true"></a-mixin>
+      </a-assets>
+      <a-camera position="-4 0 4">
+        <a-cursor></a-cursor>
+      </a-camera>
+      
+<a-sky color="#000000"></a-sky>
+
+    <a-entity material="src:#ziar" position="-0.3 0 0.01" href="index.html" mixin="buton" target="#scale"><a-animation attribute="scale" from="1 1 1" to="1.6 1.6 1.6" begin="href" dur="800" easing="ease-in" id="scale"></a-animation></a-entity>
+    <a-entity material="src:#adevaru" position="2.7 0 0.01" href="fiscu1.html" mixin="buton" target="#scale"><a-animation attribute="scale" from="1 1 1" to="1.6 1.6 1.6" begin="href" dur="800" easing="ease-in" id="scale"></a-animation></a-entity>
+    <a-entity material="src:#gspu"  position="6 0 0.01" href="index.html" mixin="buton" target="#scale"><a-animation attribute="scale" from="1 1 1" to="1.6 1.6 1.6" begin="href" dur="800" easing="ease-in" id="scale"></a-animation></a-entity>
+    <a-text value="Trial" position="-0.55 -1.8 0.01"></a-text>
+    <a-text value="5.00 $" position="2.45 -1.8 0.01 "></a-text>
+    <a-text value="5.00 $" position="5.75 -1.8 0.01 "></a-text>
+</body>
+</html>
